@@ -9,11 +9,12 @@ Bootstrap包含的内容：基本结构，css，组件，JavaScript插件，定�
 Bootstrap2（最后的版本2.3.2）与bootstrap3：
 ![](https://github.com/Amy9210/bootstrapLearning/blob/master/images/difference.png)  
 Bootstrap框架主要包含的文件：
- 
+![](https://github.com/Amy9210/bootstrapLearning/blob/master/images/bootstrapFiles.jpg)   
 Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引入。 
-Bootstrap全局样式：
-o	移除body的margin声明
-o	设置body的背景色为白色
-o	为排版设置了基本的字体、字号和行高
-o	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式
+![](https://github.com/Amy9210/bootstrapLearning/blob/master/images/howToUseBootstrap.jpg)   
+<h2>Bootstrap全局样式：</h2>
+* 移除body的margin声明
+* 设置body的背景色为白色
+*	为排版设置了基本的字体、字号和行高
+*	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式
 
