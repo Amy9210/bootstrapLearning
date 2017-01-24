@@ -7,28 +7,7 @@ Bootstrap包含的内容：基本结构，css，组件，JavaScript插件，定�
 <h2>如何使用bootstrap：</h2>
 官方网站链接：http://getbootstrap.com/
 Bootstrap2（最后的版本2.3.2）与bootstrap3：
-<table>
-<th>
-<tr> </tr>
-<tr>Bootstrap2</tr>
-<tr>Bootstrap3</tr>
-</th>
-<td>
-<tr>浏览器兼容性</tr>	
-<tr>兼容ie6，ie7，ie8	</tr>
-<tr>不兼容ie6，ie7，ie8</tr>
-</td>
-<td>
-<tr>移动优先</tr>
-<tr> </tr>
-<tr>更具优势</tr>
-</td>
-<td>
-<tr>设计风格</tr>	
-<tr>渐变凹凸</tr>	
-<tr>扁平化</tr>
-</td>
-</table>
+![](https://github.com/Amy9210/bootstrapLearning/blob/master/images/difference.png)  
 Bootstrap框架主要包含的文件：
  
 Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引入。 
