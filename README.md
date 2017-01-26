@@ -1,4 +1,4 @@
-# 说明：学习bootstrap时记的一些笔记，学习资料来源于[慕课网](http://www.imooc.com/learn/141)及[bootstrap官网](http://getbootstrap.com/)。学习内容为bootstrap3.3.7版本。
+# 说明：学习bootstrap时记的一些笔记，学习资料来源于[慕课网](http://www.imooc.com/learn/141)及[bootstrap官网](http://getbootstrap.com/)。学习内容为bootstrap3.3.7版本。小节的“css源码”链接是bootstrap的css文件中相应的该部分的代码，并且有些有个人的注释，欢迎大家提出意见及建议~
 <h1>一、Bootstrap简介</h1>
 <h2>Bootstrap简介：</h2>
 Bootstrap 是 2011 年八月在 GitHub 上发布的开源产品。由 Twitter 的 Mark Otto 和 Jacob Thornton 开发。
