@@ -1,0 +1,65 @@
+/*1415-1467行*/
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+/*去点列表*/
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+/*内联列表*/
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/*定义列表*/
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+/*水平定义列表*/
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    float: left;/*dt,dd是块状元素，dt左浮动后，dt和相应的dd可在同一行排列*/
+    width: 160px;/*定义dt的宽度*/
+    text-overflow: ellipsis;/*当文本溢出时是否显示省略标记*/
+    white-space: nowrap;/*规定段落中的文本不进行换行.(white-space 属性设置如何处理元素内的空白。normal:默认。空白会被浏览器忽略。
+pre:空白会被浏览器保留。其行为方式类似 HTML 中的 <pre> 标签。nowrap:文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。
+pre-wrap保留空白符序列，但是正常地进行换行。pre-line合并空白符序列，但是保留换行符。
+inherit规定应该从父元素继承 white-space 属性的值。)*/
+    overflow: hidden;/*text-overflow属性仅是注解:当文本溢出时是否显示省略标记。却并不具备其它的样式属性定义。
+    我们想要实现溢出时产生省略号的效果。还必须定义：强制文本在一行内显示（white-space:nowrap）及溢出内容为
+    隐藏（overflow:hidden）。只有这样才能实现溢出文本显示省略号的效果。
+*/
+    clear: left;
+    text-align: right;
+    
+  }
+  .dl-horizontal dd {
+    margin-left: 180px;/*大于160px，这样当dd内容有多行时，第一行以外的部分也不会显示在dt部分*/
+  }
+}
