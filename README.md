@@ -45,7 +45,8 @@ $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/1
 如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。</br>
 “.lead”对应的样式如下：
 
-`.lead {
+` 
+.lead {
 
   margin-bottom: 20px;
   
@@ -67,6 +68,7 @@ $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/1
   
 }`
 除此之外，Bootstrap还通过元素标签:&lt;small$gt;、&ltstrong&gt;、&lt;em&gt;和&lt;cite&gt;给文本做突出样式处理。
+
 `b,strong {
 
   font-weight: bold; /*文本加粗*/
