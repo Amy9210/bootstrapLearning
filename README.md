@@ -18,7 +18,7 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 *	为排版设置了基本的字体、字号和行高
 *	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式</br>
 <h1>二、排版</h1>
-<h2>1、标题</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/title.css)）
+<h2>1、标题</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/title.css)）</br>
 <strong>定义规则：</strong></br> 
 <strong>样式说明：</strong></br>
 （1）重新设置了margin-top和margin-bottom的值，  h1~h3重置后的值都是20px；h4~h6重置后的值都是10px。</br>
@@ -27,8 +27,8 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1~.h6六个类名。</br>
 <strong>用&lt;small&gt;标签显示副标题：</strong></br>
 （1）行高都是1，而且font-weight设置了normal变成了常规效果（不加粗），同时颜色被设置为灰色（#999）。</br>
-（2）由于&lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
-<h2>2、段落</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）
+（2）由于&lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%。</br>
+<h2>2、段落</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）</br>
 <strong>样式说明：</strong></br>
 1、全局文本字号为14px(font-size)。</br>
 2、行高为1.42857143（line-height），大约是20px。</br>
@@ -44,6 +44,7 @@ $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/1
 <h2>3、强调内容</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis.css)）
 如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。</br>
 “.lead”对应的样式如下：
+
 `.lead {
 
   margin-bottom: 20px;
@@ -55,19 +56,27 @@ $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/1
   line-height: 1.4;
   
 }
+
 @media (min-width: 768px) {/*大中型浏览器字体稍大*/
+
   .lead {
   
     font-size: 21px;
     
   }
+  
 }`
 除此之外，Bootstrap还通过元素标签:&lt;small$gt;、&ltstrong&gt;、&lt;em&gt;和&lt;cite&gt;给文本做突出样式处理。
 `b,strong {
+
   font-weight: bold; /*文本加粗*/
+  
 }
+
 small,.small {
+
   font-size: 85%; /*标准字体的85%,也就是14px * 0.85px，差不多12px*/
+  
 }`
 
 &lt;cite&gt;没有在源码3.3.7版本中找到源码，但使用&lt;cite&gt;标签时会显示斜体效果。
