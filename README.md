@@ -18,7 +18,7 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 *	为排版设置了基本的字体、字号和行高
 *	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式</br>
 <h1>二、排版</h1>
-<h2>1、标题（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/title.css)）</h2>
+<h2>1、标题</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/title.css)）
 <strong>定义规则：</strong></br> 
 <strong>样式说明：</strong></br>
 （1）重新设置了margin-top和margin-bottom的值，  h1~h3重置后的值都是20px；h4~h6重置后的值都是10px。</br>
@@ -28,7 +28,7 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 <strong>用&lt;small&gt;标签显示副标题：</strong></br>
 （1）行高都是1，而且font-weight设置了normal变成了常规效果（不加粗），同时颜色被设置为灰色（#999）。</br>
 （2）由于$lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
-<h2>2、段落（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）</h2>
+<h2>2、段落</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）
 <strong>样式说明：</strong></br>
 1、全局文本字号为14px(font-size)。</br>
 2、行高为1.42857143（line-height），大约是20px。</br>
@@ -41,7 +41,7 @@ LESS版本：</br>
 Sass版本：</br>
 $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/14</br>
 第一条语句用于设置字体大小，第二条语句用于设置行高。系统默认使用这两个值产生整个页面相应的margin、padding和line-height的值。换句话说，只需要修改这两个变量的值，然后重新编译，就可以自定义自己的Bootstrap排版样式。</br>
-<h2>3、强调内容（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis.css)）</h2>
+<h2>3、强调内容</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis.css)）
 如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。</br>
 “.lead”对应的样式如下：
 `.lead {
@@ -72,7 +72,7 @@ small,.small {
 
 &lt;cite&gt;没有在源码3.3.7版本中找到源码，但使用&lt;cite&gt;标签时会显示斜体效果。
 &lt;em&gt;与&lt;i&gt;均为斜体显示标签。
-<h2>4、强调相关的类（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis-text.css)）</h2>
+<h2>4、强调相关的类</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis-text.css)）
 在Bootstrap中除了使用标签&lt;strong&gt;、&ltem&gt等说明正文某些字词、句子的重要性，Bootstrap还定义了一套类名，这里称其为强调类名（类似前面说的“.lead”）,这些强调类都是通过颜色来表示强调，具本说明如下：</br>
 •	.text-muted：提示，使用浅灰色（#999）</br>
 •	.text-primary：主要，使用蓝色（#428bca）</br>
@@ -80,7 +80,7 @@ small,.small {
 •	.text-info：通知信息，使用浅蓝色（#31708f）</br>
 •	.text-warning：警告，使用黄色（#8a6d3b）</br>
 •	.text-danger：危险，使用褐色（#a94442)</br>
-<h2>5、文本对齐风格（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/text-align.css)）</h2>
+<h2>5、文本对齐风格</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/text-align.css)）
 •	在CSS中常常使用text-align来实现文本的对齐风格的设置。其中主要有四种风格：
 •	  ☑  左对齐，取值left
 •	  ☑  居中对齐，取值center
@@ -91,7 +91,7 @@ small,.small {
 •	  ☑   .text-center：居中对齐
 •	  ☑   .text-right：右对齐
 •	  ☑   .text-justify：两端对齐
-<h2>6、列表（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/list.css)）</h2>
+<h2>6、列表</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/list.css)）
 <h3>6.1无序列表和有序列表</h3>
 Bootstrap对于列表，只是在margin上做了一些调整。
 ul,
@@ -118,7 +118,7 @@ ol ol {
 1、将dt设置了一个左浮动，并且设置了一个宽度为160px </br>
 2、将dd设置一个margin-left的值为180px，达到水平的效果
 3、当标题宽度超过160px时，将会显示三个省略号
-7、代码（css源码）
+<h2>7、代码</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/CodePreKbd.css)）
 在Bootstrap主要提供了三种代码风格：
 1、使用&lt;code&gt;&lt;code&gt;来显示单行内联代码
 2、使用&lt;pre&gt;&lt;/pre&gt;来显示多行块代码
@@ -146,5 +146,3 @@ pre风格：
 </div>`
 kbd风格：
 `<div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>`
-
-
