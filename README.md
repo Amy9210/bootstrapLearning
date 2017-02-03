@@ -27,7 +27,7 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1~.h6六个类名。</br>
 <strong>用&lt;small&gt;标签显示副标题：</strong></br>
 （1）行高都是1，而且font-weight设置了normal变成了常规效果（不加粗），同时颜色被设置为灰色（#999）。</br>
-（2）由于$lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
+（2）由于&lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
 <h2>2、段落</h2>（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）
 <strong>样式说明：</strong></br>
 1、全局文本字号为14px(font-size)。</br>
