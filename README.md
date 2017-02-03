@@ -19,22 +19,22 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 *	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式</br>
 <h1>二、排版</h1>
 <h2>1、标题（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/title.css)）</h2>
-**定义规则：**</br> 
-**样式说明：**</br>
+<strong>定义规则：</strong></br> 
+<strong>样式说明：</strong></br>
 （1）重新设置了margin-top和margin-bottom的值，  h1~h3重置后的值都是20px；h4~h6重置后的值都是10px。</br>
 （2）所有标题的行高都是1.1（也就是font-size的1.1倍）,而且文本颜色和字体都继承父元素的颜色和字体。</br>
 （3）固定不同级别标题字体大小，h1=36px，h2=30px，h3=24px，h4=18px，h5=14px和h6=12px。</br>
 在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1~.h6六个类名。</br>
-**用&lt;small&gt;标签显示副标题：**</br>
+<strong>用&lt;small&gt;标签显示副标题：</strong></br>
 （1）行高都是1，而且font-weight设置了normal变成了常规效果（不加粗），同时颜色被设置为灰色（#999）。</br>
 （2）由于$lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
 <h2>2、段落（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）</h2>
-**样式说明：**</br>
+<strong>样式说明：</strong></br>
 1、全局文本字号为14px(font-size)。</br>
 2、行高为1.42857143（line-height），大约是20px。</br>
 3、颜色为深灰色（#333）；</br>
 4、字体为"Helvetica Neue", Helvetica, Arial, sans-serif;（font-family），或许这样的字体对我们中文并不太合适，但在实际项目中，大家可以根据自己的需求进行重置，该设置都定义在&lt;body&gt;元素上，由于这几个属性都是继承属性，所以Web页面中文本（包括段落p元素）如无重置都会具有这些样式效果。</br>
-**用css预处理器进行自定义排版设置：**</br>
+<strong>用css预处理器进行自定义排版设置：</strong></br>
 在Bootstrap中，排版设置的默认值都存在variables.less文件中(Sass版本存在variables.scss中)的两个变量：</br>
 LESS版本：</br>
 @font-size-base: 14px; @line-height-base: 1.428571429; // 20/14</br>
