@@ -24,27 +24,27 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 （1）重新设置了margin-top和margin-bottom的值，  h1~h3重置后的值都是20px；h4~h6重置后的值都是10px。</br>
 （2）所有标题的行高都是1.1（也就是font-size的1.1倍）,而且文本颜色和字体都继承父元素的颜色和字体。</br>
 （3）固定不同级别标题字体大小，h1=36px，h2=30px，h3=24px，h4=18px，h5=14px和h6=12px。</br>
-在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1~.h6六个类名。
-用&lt;small&rt;标签显示副标题：</br>
+在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1~.h6六个类名。</br>
+用&lt;small&gt;标签显示副标题：</br>
 （1）行高都是1，而且font-weight设置了normal变成了常规效果（不加粗），同时颜色被设置为灰色（#999）。</br>
-（2）由于small内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
+（2）由于$lt;small&gt;内的文本字体在h1~h3内，其大小都设置为当前字号的65%；而在h4~h6内的字号都设置为当前字号的75%；</br>
 <h2>2、段落（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/p.css)）</h2>
-样式说明：
+样式说明：</br>
 1、全局文本字号为14px(font-size)。</br>
 2、行高为1.42857143（line-height），大约是20px。</br>
 3、颜色为深灰色（#333）；</br>
-4、字体为"Helvetica Neue", Helvetica, Arial, sans-serif;（font-family），或许这样的字体对我们中文并不太合适，但在实际项目中，大家可以根据自己的需求进行重置，该设置都定义在body元素上，由于这几个属性都是继承属性，所以Web页面中文本（包括段落p元素）如无重置都会具有这些样式效果。</br>
-用css预处理器进行自定义排版设置：
-在Bootstrap中，排版设置的默认值都存在variables.less文件中(Sass版本存在_variables.scss中)的两个变量：
-LESS版本：
-@font-size-base: 14px; @line-height-base: 1.428571429; // 20/14
-Sass版本：
-$font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/14
-第一条语句用于设置字体大小，第二条语句用于设置行高。系统默认使用这两个值产生整个页面相应的margin、padding和line-height的值。换句话说，只需要修改这两个变量的值，然后重新编译，就可以自定义自己的Bootstrap排版样式。
+4、字体为"Helvetica Neue", Helvetica, Arial, sans-serif;（font-family），或许这样的字体对我们中文并不太合适，但在实际项目中，大家可以根据自己的需求进行重置，该设置都定义在&lt;body&gt;元素上，由于这几个属性都是继承属性，所以Web页面中文本（包括段落p元素）如无重置都会具有这些样式效果。</br>
+用css预处理器进行自定义排版设置：</br>
+在Bootstrap中，排版设置的默认值都存在variables.less文件中(Sass版本存在variables.scss中)的两个变量：</br>
+LESS版本：</br>
+@font-size-base: 14px; @line-height-base: 1.428571429; // 20/14</br>
+Sass版本：</br>
+$font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/14</br>
+第一条语句用于设置字体大小，第二条语句用于设置行高。系统默认使用这两个值产生整个页面相应的margin、padding和line-height的值。换句话说，只需要修改这两个变量的值，然后重新编译，就可以自定义自己的Bootstrap排版样式。</br>
 <h2>3、强调内容（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis.css)）</h2>
-如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。
+如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。</br>
 “.lead”对应的样式如下：
-.lead {
+`.lead {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 300;
@@ -54,25 +54,25 @@ $font-size-base: 14px !default; $line-height-base: 1.428571429 !default; // 20/1
   .lead {
     font-size: 21px;
   }
-}
-除此之外，Bootstrap还通过元素标签:<small>、<strong>、<em>和<cite>给文本做突出样式处理。
-b,strong {
+}`
+除此之外，Bootstrap还通过元素标签:&lt;small$gt;、&ltstrong&gt;、&lt;em&gt;和&lt;cite&gt;给文本做突出样式处理。
+`b,strong {
   font-weight: bold; /*文本加粗*/
 }
 small,.small {
   font-size: 85%; /*标准字体的85%,也就是14px * 0.85px，差不多12px*/
-}
+}`
 
-<cite>没有在源码3.3.7版本中找到源码，但使用<cite>标签时会显示斜体效果。
-<em>与<i>均为斜体显示标签。
+&lt;cite&gt;没有在源码3.3.7版本中找到源码，但使用&lt;cite&gt;标签时会显示斜体效果。
+&lt;em&gt;与&lt;i&gt;均为斜体显示标签。
 <h2>4、强调相关的类（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/emphasis-text.css)）</h2>
-在Bootstrap中除了使用标签<strong>、<em>等说明正文某些字词、句子的重要性，Bootstrap还定义了一套类名，这里称其为强调类名（类似前面说的“.lead”）,这些强调类都是通过颜色来表示强调，具本说明如下：
-•	.text-muted：提示，使用浅灰色（#999）
-•	.text-primary：主要，使用蓝色（#428bca）
-•	.text-success：成功，使用浅绿色(#3c763d)
-•	.text-info：通知信息，使用浅蓝色（#31708f）
-•	.text-warning：警告，使用黄色（#8a6d3b）
-•	.text-danger：危险，使用褐色（#a94442）
+在Bootstrap中除了使用标签&lt;strong&gt;、&ltem&gt等说明正文某些字词、句子的重要性，Bootstrap还定义了一套类名，这里称其为强调类名（类似前面说的“.lead”）,这些强调类都是通过颜色来表示强调，具本说明如下：</br>
+•	.text-muted：提示，使用浅灰色（#999）</br>
+•	.text-primary：主要，使用蓝色（#428bca）</br>
+•	.text-success：成功，使用浅绿色(#3c763d)</br>
+•	.text-info：通知信息，使用浅蓝色（#31708f）</br>
+•	.text-warning：警告，使用黄色（#8a6d3b）</br>
+•	.text-danger：危险，使用褐色（#a94442)</br>
 <h2>5、文本对齐风格（[css源码](https://github.com/Amy9210/bootstrapLearning/blob/master/layout/text-align.css)）</h2>
 •	在CSS中常常使用text-align来实现文本的对齐风格的设置。其中主要有四种风格：
 •	  ☑  左对齐，取值left
@@ -113,22 +113,22 @@ ol ol {
 3、当标题宽度超过160px时，将会显示三个省略号
 7、代码（css源码）
 在Bootstrap主要提供了三种代码风格：
-1、使用<code></code>来显示单行内联代码
-2、使用<pre></pre>来显示多行块代码
-3、使用<kbd></kbd>来显示用户输入代码
+1、使用&lt;code&gt;&lt;code&gt;来显示单行内联代码
+2、使用&lt;pre&gt;&lt;/pre&gt;来显示多行块代码
+3、使用&lt;kbd&gt;&lt;/kbd&gt;来显示用户输入代码
 在使用代码时，用户可以根据具体的需求来使用不同的类型：
-1、<code>：一般是针对于单个单词或单个句子的代码
-2、<pre>：一般是针对于多行代码（也就是成块的代码）
-3、<kbd>:一般是表示用户要通过键盘输入的内容
+1、&lt;code&gt;：一般是针对于单个单词或单个句子的代码
+2、&lt;pre&gt;：一般是针对于多行代码（也就是成块的代码）
+3、&lt;kbd&gt;:一般是表示用户要通过键盘输入的内容
 
 code风格：
-<div>Bootstrap的代码风格有三种：
+`<div>Bootstrap的代码风格有三种：
   <code>&lt;code&gt;</code>
   <code>&lt;pre&gt;</code>
   <code>&lt;kbd&gt;</code>
-</div>
+</div>`
 pre风格：
-<div>
+`<div>
 <pre>
 &lt;ul&gt;
 &lt;li&gt;...&lt;/li&gt;
@@ -136,8 +136,8 @@ pre风格：
 &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-</div>
+</div>`
 kbd风格：
-<div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>
+`<div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>`
 
 
