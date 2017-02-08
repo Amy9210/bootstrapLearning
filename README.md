@@ -17,4 +17,4 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 * 设置body的背景色为白色
 *	为排版设置了基本的字体、字号和行高
 *	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式</br>
-<h1>2017.02.08更新：学了一段时间，发现看less文件比看css源码容易理解，开始研究bootstrap的less源码</h1>
+<h1>2017.02.08更新：学了一段时间，发现看less文件比看css源码容易理解，开始研究bootstrap的less源码。</h1>
