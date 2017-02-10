@@ -17,6 +17,9 @@ Bootstrap中的js文件均依赖于jQuery，因此jQuery要在bootstrap之前引
 * 设置body的背景色为白色
 *	为排版设置了基本的字体、字号和行高
 *	设置全局链接颜色，且当链接处于悬浮“:hover”状态时才会显示下划线样式</br>
-<h1>bootstrap中less的使用</h1>
-bootstrap源码是由less编写的。bootstrap的less源码包含四十多个单独的less文件，将样式分开可以使多人分工合作，从而方便开发；此外有利于后期维护；最后也有利于用户修改样式。</br>
-在[bootstrap官网](http://getbootstrap.com/getting-started/)下载“source code”，解压后就可看到Less的文件夹。</br>开发人员在编写样式的时候，对页面的元素进行了分离。
+<h1>二、bootstrap中less的使用</h1>
+  bootstrap源码是由less编写的。bootstrap的less源码包含四十多个单独的less文件，将样式分开可以使多人分工合作，从而方便开发；此外有利于后期维护；最后也有利于用户修改样式。</br>
+  在[bootstrap官网](http://getbootstrap.com/getting-started/)下载“source code”，解压后就可看到Less的文件夹。</br>
+  开发人员在编写样式的时候，对页面的元素进行了分离。所以存在不同的less文件，比如variables.less，theme.less，bootstrap.less等。
+  在variables.less文件中开发人员将一些常用的值定义成了变量的形式。这样编写不同less文件时可以确保样式的统一。</br>
+    编写完不同的less文件后，将所有的less文件引入bootstrap.less，再进行编译，就可以得到最终的css文件了。
